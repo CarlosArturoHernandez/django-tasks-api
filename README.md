@@ -1,6 +1,6 @@
 # Django-React Task Manager App
 
-![Logo de Task Manager](https://skillicons.dev/icons?i=django,react,sqlite,git)
+![Logo de Task Manager](https://skillicons.dev/icons?i=django,react,sqlite,tailwind)
 
 ## Descripción
 
