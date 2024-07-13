@@ -45,8 +45,9 @@ Django-React Task Manager App es una aplicación para la gestión de tareas desa
 
 ## Estructura de Archivos
 
-- `django_crud_api/` - Código fuente de la API Django.
 - `client/` - Código fuente del cliente React.
+- `django_crud_api/` - Código fuente de la API Django.
+- `tasks/` - Código de la aplicación de django
 - `db.sqlite3` - Base de datos SQLite para desarrollo.
 
 ## Configuración
