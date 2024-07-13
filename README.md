@@ -1,6 +1,6 @@
 # Django-React Task Manager App
 
-<img src="portadaGitHub.png" alt="Portada del GitHub"></img>
+<img src="portada-GitHub.png" alt="Portada del GitHub"></img>
 
 ![Logo de Task Manager](https://skillicons.dev/icons?i=django,react,sqlite,tailwind)
 
