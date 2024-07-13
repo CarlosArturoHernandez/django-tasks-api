@@ -1,1 +1,1 @@
-web: gunicorn django_crud_api.wsgi
+web: python manage.py collectstatic && collecgunicorn django_crud_api.wsgi

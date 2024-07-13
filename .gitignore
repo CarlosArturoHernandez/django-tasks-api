@@ -8,6 +8,7 @@ __pycache__/
 venv/
 django_crud_api/static/
 django_crud_api/media/
+staticfiles
 
 # Node.js
 node_modules/
