@@ -4,7 +4,7 @@
 
 ## Descripción
 
-Django-React Task Manager App es una aplicación para la gestión de tareas desarrollada con Django REST Framework y React. Proporciona una plataforma para organizar y gestionar tareas de manera eficiente, con una interfaz de usuario moderna y funcionalidades clave para la administración de proyectos.
+Django-React Task Manager App es una aplicación para la gestión de tareas desarrollada con Django REST Framework y React. Proporciona una plataforma para organizar y gestionar tareas de forma básica.
 
 ## Tecnologías Utilizadas
 
