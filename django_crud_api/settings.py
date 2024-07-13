@@ -146,3 +146,8 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://*',
+    'https://django-tasks-api-production.up.railway.app/'
+]
