@@ -8,7 +8,6 @@ Django-React Task Manager App es una aplicación para la gestión de tareas desa
 
 ## Tecnologías Utilizadas
 
-- Python
 - Django
 - Django REST Framework
 - React
@@ -50,6 +49,6 @@ Django-React Task Manager App es una aplicación para la gestión de tareas desa
 - `tasks/` - Código de la aplicación de django
 - `db.sqlite3` - Base de datos SQLite para desarrollo.
 
-## Configuración
+## Configuración de BD
 
 - No se requiere configuración adicional para SQLite, ya que es parte del entorno de desarrollo de Python.
