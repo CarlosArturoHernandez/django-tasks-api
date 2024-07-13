@@ -40,9 +40,8 @@ Django-React Task Manager App es una aplicación para la gestión de tareas desa
 ## Funcionalidades Principales
 
 - Creación, edición y eliminación de tareas.
-- Asignación de prioridades y fechas de vencimiento.
 - Interfaz de usuario responsive con React.
-- Panel de administración para gestionar usuarios y proyectos.
+- Panel de administración para gestionar usuarios del backend.
 
 ## Estructura de Archivos
 
