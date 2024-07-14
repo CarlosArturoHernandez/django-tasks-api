@@ -12,11 +12,14 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 import os
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Load environment variables from .env file
+# load_dotenv()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -25,13 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rb(f88mw9lw)%xt%z%cw^#!y+d$o#mm98ow42ii8e2el4th$n-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    'django-tasks-api-production.up.railway.app'
-]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -130,6 +129,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Para recolectar los archivos estáticos mediante Gunicorn
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -138,17 +140,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Cors Authorization: Esto gestiona las peticiones HTTP del cliente para que se conecten los dos servidores (Backend y Frontend)
 CORS_ALLOWED_ORIGINS = ["http://localhost:5173"]
 
-# Para recolectar los archivos estáticos mediante Gunicorn
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
 # Este módulo sirve para auto documentar la API 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
 }
 
-CSRF_TRUSTED_ORIGINS = [
-    'http://*',
-    'https://django-tasks-api-production.up.railway.app'
-]
+# Para que WhiteNoise guarde en caché de forma segura en su propio backend
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
