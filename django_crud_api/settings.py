@@ -29,6 +29,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
+    '127.0.0.1',
     'django-tasks-api-production.up.railway.app'
 ]
 
@@ -42,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic'
+    'whitenoise.runserver_nostatic',
     'corsheaders', # Sirve para comunicarse con otro backend
     'rest_framework', # Sirve para 
     'coreapi', # Sirve para documentar APIs
@@ -149,5 +150,5 @@ REST_FRAMEWORK = {
 
 CSRF_TRUSTED_ORIGINS = [
     'http://*',
-    'https://django-tasks-api-production.up.railway.app/'
+    'https://django-tasks-api-production.up.railway.app'
 ]
